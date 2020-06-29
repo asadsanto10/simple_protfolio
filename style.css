@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+}
+
+section .row {
+    margin: 0px 110px;
+}
+
+section .shape::before {
+    content: "";
+    background: url(img/shape.png) no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+section .row .col {
+    width: 50%;
+    float: left;
+}
+
+section .row .col .title h1 {
+    font-size: 40px;
+    padding-top: 50px;
+    margin-bottom: -22px;
+}
+
+section .row .col .title h1 .dif-color {
+    color: #ff2178;
+}
+
+section .row .col .title h2 {
+    font-size: 30px;
+}
+
+section .row .col .title h2 .dif-color {
+    color: #ff2178;
+}
+
+section .row .col .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .row .col .image img {
+    width: 60%;
+}
+
+section .row .button {
+    margin: 25px 0;
+}
+
+section .row .button .btn {
+    background: linear-gradient(to left, #ff217a 25%, #bc004c 100%);
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 11px 46px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+section .row .button .btn:hover {
+    background: linear-gradient(to left, #b8004a 25%, #ff0069 100%);
+    transition: all 0.3s ease;
+}
+
+section .row .button .btn:focus {
+    outline: none !important;
+}
+
+/* second section */
+
+#second_sec .second_sec_shape {
+    background: url(img/circle.png) no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 68%;
+    right: 0px;
+    z-index: -1;
+    top: 21%;
+}
