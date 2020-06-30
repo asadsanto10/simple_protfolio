@@ -1,9 +1,17 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -50,8 +58,14 @@ section .row .col .title h2 .dif-color {
 }
 
 section .row .col .image {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -64,12 +78,16 @@ section .row .button {
 }
 
 section .row .button a {
+    background-image: -webkit-gradient(linear, right top, left top, color-stop(25%, #ff217a), to(#bc004c));
+    background-image: -o-linear-gradient(right, #ff217a 25%, #bc004c 100%);
     background-image: linear-gradient(to left, #ff217a 25%, #bc004c 100%);
     border-radius: 5px;
     cursor: pointer;
     color: #ffffff;
     font-size: 16px;
     padding: 11px 46px;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
     text-decoration: none;
     background-position: 0% 0%;
@@ -114,6 +132,8 @@ section .row .button .btn:focus {
     height: 330%;
     position: absolute;
     top: -109%;
+    -webkit-transform: scale(0.2);
+    -ms-transform: scale(0.2);
     transform: scale(0.2);
     left: -46%;
     z-index: -1;
@@ -128,17 +148,22 @@ section .row .button .btn:focus {
 #third_sec .border1 {
     border-width: 3px;
     border-style: solid;
+    -o-border-image: -o-linear-gradient(top, red, rgba(0, 0, 0, 0)) 1 100%;
+    border-image: -webkit-gradient(linear, left top, left bottom, from(red), to(rgba(0, 0, 0, 0))) 1 100%;
     border-image: linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1 100%;
 }
 
 #third_sec .border2 {
     border-width: 3px;
     border-style: solid;
+    -o-border-image: -o-linear-gradient(top, red, rgba(0, 0, 0, 0)) 1 100%;
+    border-image: -webkit-gradient(linear, left top, left bottom, from(red), to(rgba(0, 0, 0, 0))) 1 100%;
     border-image: linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1 100%;
 }
 
 #third_sec .single_area {
     padding: 0 35px;
+    -webkit-box-shadow: 2px 0px 20px 4px #0000002b;
     box-shadow: 2px 0px 20px 4px #0000002b;
     margin: 0 50px 50px 0;
     height: 300px;
