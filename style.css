@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
     box-sizing: border-box;
+}
+
+section {
+    height: 400px;
 }
 
 section .row {
@@ -58,21 +63,21 @@ section .row .button {
     margin: 25px 0;
 }
 
-section .row .button .btn {
-    background: linear-gradient(to left, #ff217a 25%, #bc004c 100%);
+section .row .button a {
+    background-image: linear-gradient(to left, #ff217a 25%, #bc004c 100%);
     border-radius: 5px;
-    border: 1px solid #ffffff;
     cursor: pointer;
     color: #ffffff;
     font-size: 16px;
     padding: 11px 46px;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
     text-decoration: none;
+    background-position: 0% 0%;
+    background-size: 50%;
 }
 
-section .row .button .btn:hover {
-    background: linear-gradient(to left, #b8004a 25%, #ff0069 100%);
-    transition: all 0.3s ease;
+section .row .button a:hover {
+    background-position: 100% 50%;
 }
 
 section .row .button .btn:focus {
@@ -80,13 +85,66 @@ section .row .button .btn:focus {
 }
 
 /* second section */
-
 #second_sec .second_sec_shape {
+    position: relative;
+}
+
+#second_sec .second_sec_shape::before {
+    content: "";
     background: url(img/circle.png) no-repeat;
     position: absolute;
-    height: 100%;
-    width: 68%;
-    right: 0px;
+    top: 20%;
+    right: -110px;
+    height: 101%;
+    width: 100%;
+    background-position: right;
     z-index: -1;
-    top: 21%;
+}
+
+#third_sec {
+    clear: both;
+    padding-top: 60px;
+    position: relative;
+}
+
+#third_sec::before {
+    content: "";
+    background: url(img/image-14.png) no-repeat;
+    width: 100%;
+    height: 330%;
+    position: absolute;
+    top: -109%;
+    transform: scale(0.2);
+    left: -46%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#third_sec h1 {
+    font-size: 40px;
+    margin-top: -20px;
+}
+
+#third_sec .border1 {
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+#third_sec .border2 {
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+#third_sec .single_area {
+    padding: 0 35px;
+    box-shadow: 2px 0px 20px 4px #0000002b;
+    margin: 0 50px 50px 0;
+    height: 300px;
+}
+
+#footer {
+    clear: both;
+    text-align: center;
 }
